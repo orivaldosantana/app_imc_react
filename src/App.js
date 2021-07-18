@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import IMCForm from './components/form';
 
 /*
 Estrutura geral do APP - Rascunho 
@@ -13,10 +14,15 @@ Estrutura geral do APP - Rascunho
 */
 
 
-export default function App() {
-    return (
-        <div>
-            Componente APP - IMC!!!      
-        </div>
-  );
+export default class App extends Component {
+ 
+
+  render(){
+   return (
+      <div>
+        <h1> APP - IMC!!!   </h1>   
+        <IMCForm />
+      </div>
+    );
+  }
 }
