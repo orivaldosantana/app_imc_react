@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import IMCForm from './components/form';
-
+import Display from './components/Display';
 /*
 Estrutura geral do APP - Rascunho 
 - Um Display: recebe o resultado do calculo do IMC
@@ -15,12 +15,16 @@ Estrutura geral do APP - Rascunho
 
 
 export default class App extends Component {
- 
+  constructor(props){
+    super(props);
+    this.state = {imc: '0'};
+  }
 
   render(){
    return (
       <div>
         <h1> APP - IMC!   </h1>   
+        <Display imc={this.state.imc} />
         <IMCForm />
       </div>
     );
