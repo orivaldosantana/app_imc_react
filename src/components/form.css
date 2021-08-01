@@ -3,14 +3,14 @@
     color: #0431B4;
 }
 
-.BtnSubmit {
+.BtnSubmit input{
     font-size: 1.2em;
     background-color:  #EFF5FB;
     width: 230px;
     height: 40px;
     border-color: #5882FA;
     outline: none;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 8px;
     color: #0431B4;
     margin-top: 20px;
@@ -23,9 +23,8 @@ label {
     margin: 3px;  
 }
 
-input {
+.TextIn input {
     font-size: 1.2em;
-    width: 160px;
     align-self: flex-end;
     border-radius: 4px;
     border-color: #5882FA;

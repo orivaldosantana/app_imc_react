@@ -31,12 +31,12 @@ export default class  IMCForm extends Component {
     render() {
         return ( 
             <form className="Form" onSubmit={this.handleSubmit} >
-                <label> <strong> Massa: </strong></label>
-                <div> 
+                <label>  Massa: </label>
+                <div className="TextIn"> 
                     <input type="number" value={this.state.mass} onChange={this.handleChangeMass} id="massa" /> 
                 </div>
-                <label><strong> Altura: </strong> </label>
-                <div> 
+                <label> Altura:  </label>
+                <div className="TextIn"> 
                     <input type="number" value={this.state.hight} onChange={this.handleChangeHight} id="altura" />
                 </div>
                 <div className="BtnSubmit"> 
