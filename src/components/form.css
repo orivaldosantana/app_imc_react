@@ -3,7 +3,7 @@
     color: #0431B4;
 }
 
-button {
+.BtnSubmit {
     font-size: 1.2em;
     background-color:  #EFF5FB;
     width: 230px;
@@ -16,9 +16,6 @@ button {
     margin-top: 20px;
 }
 
-button:active {
-    background-color: #2E9AFE;
-}
 
 label {
     
