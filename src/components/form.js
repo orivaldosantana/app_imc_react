@@ -23,7 +23,12 @@ export default class  IMCForm extends Component {
     }
     
     handleSubmit(event){
-        console.log("Dados do form: "+ this.state.mass +" "+ this.state.hight )
+        
+        const inMass = this.state.mass; 
+        const inHight = this.state.hight; 
+        const imc = inMass/(inHight*inHight); 
+        this.props.onIMCChange(imc);  
+        console.log("Dados do form:\n massa = "+ inMass +"\n Altura = "+ inHight )
         //evita atualizar a página 
         event.preventDefault(); 
     }

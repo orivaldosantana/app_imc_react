@@ -18,14 +18,21 @@ export default class App extends Component {
   constructor(props){
     super(props);
     this.state = {imc: '0'};
+
+    this.handleIMCChange = this.handleIMCChange.bind(this);
+  }
+
+  handleIMCChange(imc){
+    this.setState( {imc} )
   }
 
   render(){
-   return (
+    const newIMC = this.state.imc; 
+    return (
       <div>
         <h1> APP - IMC!   </h1>   
-        <Display imc={this.state.imc} />
-        <IMCForm />
+        <Display imc={newIMC} />
+        <IMCForm onIMCChange={this.handleIMCChange} />
       </div>
     );
   }
