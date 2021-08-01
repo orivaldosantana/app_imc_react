@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+
+import './App.css'
+
+
 import IMCForm from './components/form';
 import Display from './components/Display';
+import IMCHeader from './components/Header';
+
 /*
 Estrutura geral do APP - Rascunho 
 - Um Display: recebe o resultado do calculo do IMC
@@ -30,7 +36,7 @@ export default class App extends Component {
     const newIMC = this.state.imc; 
     return (
       <div>
-        <h1> APP - IMC!   </h1>   
+        <IMCHeader title="APP - IMC" />   
         <Display imc={newIMC} />
         <IMCForm onIMCChange={this.handleIMCChange} />
       </div>

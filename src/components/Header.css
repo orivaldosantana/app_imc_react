@@ -1,0 +1,10 @@
+header {
+    background: #e6f7ff;
+    border-bottom: 2px solid #5882FA; 
+
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0.6em;
+}

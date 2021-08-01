@@ -17,16 +17,18 @@
 }
 
 
-label {
+.TextIn{
     
     font-size: 1.2em;
-    margin: 3px;  
+    margin: 10px;  
 }
 
 .TextIn input {
-    font-size: 1.2em;
+    font-size: 1.0em;
     align-self: flex-end;
     border-radius: 4px;
     border-color: #5882FA;
-    width: 220px;
+    width: 180px;
+    color: #0431B4;
+    text-align: right;
 }

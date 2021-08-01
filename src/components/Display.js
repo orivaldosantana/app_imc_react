@@ -1,5 +1,6 @@
 import React from "react"; 
 
+import './Display.css'
 
 export default function Display(props) {
     const imc = parseFloat( props.imc ); 
@@ -32,8 +33,8 @@ export default function Display(props) {
     }
 
     return(
-        <div>
-            {imcClass !== "" && <h2> {imcClass} </h2>}
+        <div className="Display">
+            <h2> {imcClass} </h2>
             <p>{displayOutput}</p>
         </div>
     );
