@@ -1,12 +1,16 @@
 import './App.css';
-import IMCHeader from './Header';
+import React, {Component} from 'react';
+import IMCHeader from './components/Header';
 
-function App() {
-  return (
-    <div>
-      <IMCHeader title="Cálculo do IMC"/>
-    </div>
-  );
+class App extends Component {
+
+  render(){
+    return (
+      <div>
+        <IMCHeader title="Cálculo do IMC"/>
+      </div>
+    );
+  }
 }
 
 export default App;
