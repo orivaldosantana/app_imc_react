@@ -1,0 +1,27 @@
+.Form {
+    padding: 10px;
+    margin-left: 20%;
+    color: #282c34;
+    font-size: 1.3em;  
+    border-color: #282c34;
+    border-bottom: 2px solid; 
+    width: 60%; 
+
+}
+
+input {
+    margin: 10px; 
+    width: 60%; 
+    margin-left: 20%;
+    font-size: 1.1em; 
+
+}
+
+.BtnSubmit input{ 
+    background-color: #282c34;
+    color: whitesmoke; 
+    margin-left: 20%;
+    height: 50px; 
+    border-radius: 8px;
+
+}
