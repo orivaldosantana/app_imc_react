@@ -24,8 +24,11 @@ class IMCForm extends Component {
     handleSubmit(event){
         event.preventDefault(); 
         const inMass = this.state.mass; 
-        const inHight = this.state.hight; 
-        console.log("Dados do form:\n Massa: "+inMass+"\n Altura: "+inHight);
+        const inHight = this.state.hight;         
+        const imc = inMass/(inHight*inHight); 
+        console.log("Dados do form:\n Massa: "+inMass+"\n Altura: "+inHight+"\n IMC: "+imc);
+        this.props.onIMCChange(imc); 
+
         
     }
 
@@ -35,11 +38,11 @@ class IMCForm extends Component {
                 <form onSubmit={this.handleSubmit}> 
                     <div>
                         <label>Massa: </label>
-                        <input type="number" id="massa" onChange={this.handleChangeMass} />
+                        <input type="number" step="0.01" id="massa" onChange={this.handleChangeMass} />
                     </div>
                     <div>
                         <label>Altura: </label>
-                        <input type="number" id="altura" onChange={this.handleChangeHight}/>
+                        <input type="number" step="0.01" id="altura" onChange={this.handleChangeHight}/>
                     </div>
                     <div className="BtnSubmit">
                         <input type="submit" value="Calcular" />
